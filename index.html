@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Akash Pandit</title>
-        <link href="HomeAttrs/style.css" rel="stylesheet" />
+<html lang="en">
+<head>
+    <title>Akash Pandit</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="HomeAttrs/style.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap');
+    </style>
+    <script>
+        function fitCanvas() {
+            const canvas = document.getElementById("sim");
+            const title = document.getElementById("FrontTitle");
+            const body = document.body;
+            const html = document.documentElement;
 
-    </head>
-    <body>
-        <h1 id="FrontTitle">Akash Pandit</h1>
-    </body>
+            // set canvas properties to window dimensions
+            canvas.width = html.clientWidth;
+            canvas.height = canvas.width / 3;
+
+            // update canvas
+            const ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            }
+    </script>
+</head>
+<body>
+    <h1 id="FrontTitle">Akash Pandit</h1>
+    <script>
+        fitCanvas();
+        window.addEventListener('resize', fitCanvas);
+    </script>
+</body>
 </html>

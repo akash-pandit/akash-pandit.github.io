@@ -1,4 +1,16 @@
-FrontTitle {
-    font-size: xx-large;
-    font-family: 'Courier New';
+body {
+    margin: 0px;
+    background-color: rgb(255, 236, 201);
+}
+
+#FrontTitle {
+    font-size: 500%;
+    font-family: 'Bitter', sans-serif;  
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 0px;
+}
+
+#sim {
+    background-color: rgb(48, 48, 48);
 }
